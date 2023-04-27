@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="36dc8554-1986-46e5-8f90-fcd7501ec6a5" name="Changes" comment="项目主从复制and读写分离1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/controller/DishController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/controller/EmployController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/controller/ShoppingCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/dto/DishDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/dto/SetmealDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/mapper/DishMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/mapper/EmployeeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/impl/DishServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/impl/SetmealServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/backend/images/login/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/backend/images/login/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/backend/images/login/img_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/backend/images/login/img_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/backend/images/login/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/backend/images/login/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/backend/images/login/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/backend/images/login/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/backend/images/login/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/backend/images/login/img_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/backend/images/login/img_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/backend/images/login/img_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/ReggieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/WorksApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/common/BaseContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/common/BaseContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/common/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/common/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/common/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/common/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/common/JacksonObjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/common/JacksonObjectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/common/MyMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/common/MyMetaObjectHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/config/MPConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/config/MPConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/controller/AddressBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/controller/AddressBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/controller/CategoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/controller/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/controller/DishController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/controller/EmployController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/controller/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/controller/OrderDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/controller/OrderDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/controller/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/controller/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/controller/SetmealController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/controller/ShoppingCartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/dto/DishDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/dto/SetmealDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/filter/LoginCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/mapper/AddressBookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/mapper/AddressBookMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/mapper/CategoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/mapper/DishFlavorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/mapper/DishFlavorMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/mapper/DishMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/mapper/EmployeeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/mapper/OrderDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/mapper/OrderDetailMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/mapper/SetmealDishMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/mapper/SetmealDishMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/mapper/SetmealMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/mapper/SetmealMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/mapper/ShoppingCartMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/mapper/ShoppingCartMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/pojo/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/pojo/AddressBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/pojo/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/pojo/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/pojo/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/pojo/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/pojo/DishFlavor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/pojo/DishFlavor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/pojo/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/pojo/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/pojo/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/pojo/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/pojo/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/pojo/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/pojo/Setmeal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/pojo/Setmeal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/pojo/SetmealDish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/pojo/SetmealDish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/pojo/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/pojo/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/AddressBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/AddressBookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/DishFlavorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/DishFlavorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/DishService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/OrderDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/OrderDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/SetmealDishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/SetmealDishService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/SetmealService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/SetmealService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/ShoppingCartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/impl/AddressBookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/impl/AddressBookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/impl/CategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/impl/DishFlavorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/impl/DishFlavorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/impl/DishServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/impl/EmployeeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/impl/OrderDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/impl/OrderDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/impl/SetmealDishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/impl/SetmealDishServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/impl/SetmealServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/impl/ShoppingCartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/utils/SMSUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/utils/SMSUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Bivin/reggie/utils/ValidateCodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Bivin/r/utils/ValidateCodeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/backend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/backend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/backend/page/category/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/backend/page/category/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/backend/page/food/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/backend/page/food/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/backend/page/food/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/backend/page/food/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/backend/page/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/backend/page/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/backend/page/member/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/backend/page/member/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/backend/page/member/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/backend/page/member/list.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="v1.0" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\Maven  包\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Dpz7yHzutuXyDyAlGdApPy58Yu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="show.run.dashboard.notification" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\reggie_take_out" />
+      <recent name="D:\workspace\reggie_take_out\src\main\java\com\Bivin\reggie\pojo" />
+      <recent name="D:\workspace\reggie_take_out\src\main\resources\static" />
+      <recent name="D:\workspace\reggie_take_out\src\main\java\com\Bivin\reggie\filter" />
+      <recent name="D:\workspace\reggie_take_out\src\main\resources\static\front\page" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.bivin" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ReggieApplication (1)">
+    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.A" />
+      <module name="helloworld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Test" />
+      <module name="helloworld" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APPTest.String" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reggie_take_out" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="APPTest" />
+      <option name="METHOD_NAME" value="String" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="APPTest.ZSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springdataredis_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.bivin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.bivin" />
+      <option name="MAIN_CLASS_NAME" value="com.example.bivin.APPTest" />
+      <option name="METHOD_NAME" value="ZSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Helloworld66Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="helloworld66" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bivin.Helloworld66Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Helloworld6Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="helloworld6" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bivin.Helloworld6Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Helloworld6Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="helloworld6" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bivun.Helloworld6Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloworldApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="helloworld" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bivin.HelloworldApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReggieApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="space_works" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Bivin.r.WorksApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Bivin.SpringbootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot_test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Bivin.APP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringdataredisDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springdataredis_demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.bivin.APP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorksApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="space_works" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Bivin.r.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Bivin.r.WorksApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.WorksApplication" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.A" />
+        <item itemvalue="JUnit.APPTest.ZSet" />
+        <item itemvalue="JUnit.APPTest.String" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36dc8554-1986-46e5-8f90-fcd7501ec6a5" name="Changes" comment="" />
+      <created>1661410651955</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661410651955</updated>
+      <workItem from="1661410653417" duration="18848000" />
+      <workItem from="1661566144821" duration="16706000" />
+      <workItem from="1661736417487" duration="11804000" />
+      <workItem from="1661755470028" duration="8854000" />
+      <workItem from="1661823256216" duration="14941000" />
+      <workItem from="1662013360602" duration="1062000" />
+      <workItem from="1662014449489" duration="500000" />
+      <workItem from="1662014968482" duration="1683000" />
+      <workItem from="1662016675239" duration="7309000" />
+      <workItem from="1662024018480" duration="982000" />
+      <workItem from="1662082444237" duration="6233000" />
+      <workItem from="1662089432432" duration="27733000" />
+      <workItem from="1662342351211" duration="18622000" />
+      <workItem from="1662372084851" duration="6435000" />
+      <workItem from="1662445389919" duration="2729000" />
+      <workItem from="1662698554831" duration="22687000" />
+      <workItem from="1662769927409" duration="200000" />
+      <workItem from="1662770148571" duration="69096000" />
+      <workItem from="1663037592876" duration="22908000" />
+      <workItem from="1663074452354" duration="5424000" />
+      <workItem from="1663116788680" duration="24234000" />
+      <workItem from="1663161893618" duration="2553000" />
+      <workItem from="1663164473465" duration="67000" />
+      <workItem from="1663164698291" duration="207000" />
+      <workItem from="1663209508046" duration="19588000" />
+      <workItem from="1663289386763" duration="3376000" />
+      <workItem from="1663404537602" duration="383000" />
+      <workItem from="1663824721505" duration="1604000" />
+      <workItem from="1663826360768" duration="729000" />
+      <workItem from="1663827114244" duration="749000" />
+      <workItem from="1663827890124" duration="9000" />
+      <workItem from="1663828030037" duration="1369000" />
+      <workItem from="1663829439643" duration="922000" />
+      <workItem from="1663830409424" duration="867000" />
+      <workItem from="1663831299262" duration="576000" />
+      <workItem from="1663831898824" duration="796000" />
+      <workItem from="1663832736849" duration="8249000" />
+      <workItem from="1663997387282" duration="336000" />
+      <workItem from="1664169538386" duration="8768000" />
+      <workItem from="1664180071606" duration="15879000" />
+      <workItem from="1664264974599" duration="54046000" />
+      <workItem from="1664508300386" duration="13690000" />
+      <workItem from="1664531089417" duration="1379000" />
+      <workItem from="1664533134219" duration="9353000" />
+      <workItem from="1664788645570" duration="2253000" />
+      <workItem from="1664795305952" duration="300000" />
+      <workItem from="1665124359042" duration="2073000" />
+      <workItem from="1665244487413" duration="67000" />
+      <workItem from="1665244592999" duration="137000" />
+      <workItem from="1665244751840" duration="40000" />
+      <workItem from="1665308812159" duration="27000" />
+      <workItem from="1665309285789" duration="39000" />
+      <workItem from="1665580035829" duration="2408000" />
+      <workItem from="1666933074639" duration="15040000" />
+      <workItem from="1667392475314" duration="13000" />
+      <workItem from="1667392510948" duration="14000" />
+      <workItem from="1667887443260" duration="730000" />
+      <workItem from="1667986654991" duration="16000" />
+      <workItem from="1672411990429" duration="6921000" />
+      <workItem from="1672425939749" duration="191000" />
+      <workItem from="1672448374863" duration="55405000" />
+      <workItem from="1673170726048" duration="327000" />
+    </task>
+    <task id="LOCAL-00001" summary="awd">
+      <created>1663825653447</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663825653447</updated>
+    </task>
+    <task id="LOCAL-00002" summary="awd">
+      <created>1663827730365</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663827730365</updated>
+    </task>
+    <task id="LOCAL-00003" summary="awd">
+      <created>1663829005295</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663829005295</updated>
+    </task>
+    <task id="LOCAL-00004" summary="awd">
+      <created>1663829983787</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663829983787</updated>
+    </task>
+    <task id="LOCAL-00005" summary="初始化项目">
+      <created>1663832255785</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663832255785</updated>
+    </task>
+    <task id="LOCAL-00006" summary="初始化项目">
+      <created>1663833197420</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663833197420</updated>
+    </task>
+    <task id="LOCAL-00007" summary="redis进行优化">
+      <created>1664508740040</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664508740040</updated>
+    </task>
+    <task id="LOCAL-00008" summary="redis进行优化">
+      <created>1664511600288</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664511600288</updated>
+    </task>
+    <task id="LOCAL-00009" summary="redis短信验证码和菜品数据缓存">
+      <created>1664531679206</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664531679206</updated>
+    </task>
+    <task id="LOCAL-00010" summary="redis短信验证码和菜品数据缓存">
+      <created>1664680089620</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664680089620</updated>
+    </task>
+    <task id="LOCAL-00011" summary="项目主从复制and读写分离">
+      <created>1664790248592</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664790248592</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../helloworld6" />
+      <path value="$PROJECT_DIR$/../helloworld66" />
+      <path value="$PROJECT_DIR$/../helloworld" />
+    </ignored-roots>
+    <MESSAGE value="awd" />
+    <MESSAGE value="初始化项目" />
+    <MESSAGE value="redis进行优化" />
+    <MESSAGE value="redis短信验证码和菜品数据缓存" />
+    <MESSAGE value="项目主从复制and读写分离" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目主从复制and读写分离" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

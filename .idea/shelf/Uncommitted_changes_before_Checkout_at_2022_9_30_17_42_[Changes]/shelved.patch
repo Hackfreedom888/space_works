@@ -1,0 +1,19 @@
+Index: src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 8080\r\nspring:\r\n  application:\r\n    name: reggie_take_out  # 指定项目名称（也可以不写）\r\n  datasource:\r\n    druid:\r\n      driver-class-name: com.mysql.cj.jdbc.Driver\r\n      url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true\r\n      username: root\r\n      password: 123456\r\n\r\n  redis:\r\n    host: 192.168.91.130  # 因为我们Linux系统是部署在虚拟机当中的，也就是说虚拟机充当服务器，那么这个地址就是虚拟机 ip addr查出来的地址\r\n    port: 6379  # 默认端口号 9379\r\n    password: 123456  # 这个是我们redis服务端设置的密码\r\n    database: 0\r\n\r\n\r\nmybatis-plus:\r\n  configuration:\r\n    #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射\r\n    # 比如数据库字段名是 user_name 实体类属性名是UserName，要想把字段名的数据还能封装到实体类属性当中，\r\n    # 就开启这一项 （不过这一项不写也是默认为true的）\r\n\r\n    map-underscore-to-camel-case: true\r\n    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl\r\n  global-config:\r\n    db-config:\r\n      id-type: ASSIGN_ID  # 主键的生成形式 （我们在springboot整合ssmp的时候设定的是自动增长auto形式）\r\n\r\n\r\nreggie:\r\n  path: D:\\iiiiiiis\\
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/application.yml b/src/main/resources/application.yml
+--- a/src/main/resources/application.yml	
++++ b/src/main/resources/application.yml	
+@@ -13,7 +13,7 @@
+   redis:
+     host: 192.168.91.130  # 因为我们Linux系统是部署在虚拟机当中的，也就是说虚拟机充当服务器，那么这个地址就是虚拟机 ip addr查出来的地址
+     port: 6379  # 默认端口号 9379
+-    password: 123456  # 这个是我们redis服务端设置的密码
++    # password: 123456  # 这个是我们redis服务端设置的密码
+     database: 0
+ 
+ 
